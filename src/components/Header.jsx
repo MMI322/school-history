@@ -1,5 +1,6 @@
 import {AppBar, Box, Button, IconButton, Toolbar} from "@mui/material";
 import Typography from "@mui/material/Typography";
+import {Link} from "react-router-dom";
 
 export function Header() {
     return (
@@ -18,8 +19,12 @@ export function Header() {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             История школы
                         </Typography>
-                        <Button color="inherit">Галерея</Button>
+                        <Link to={"/gallery"}>
+                            <Button color="inherit">Галерея</Button>
+                        </Link>
+                    <Link>
                         <Button color="inherit">Видео</Button>
+                    </Link>
                     </Toolbar>
                 </AppBar>
             </Box>

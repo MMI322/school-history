@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
 import Container from '@mui/material/Container';
 import {Header} from "./components/Header";
 import {PhotoCarousel} from "./components/PhotoCarousel";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 const items = [
     {src: "./assets/1.jpg"},
@@ -17,11 +16,31 @@ const items = [
     {src: "./assets/9.jpg"}
 ]
 
-export default function App() {
-  return (
+const gallery =
     <Container>
         <Header />
         <PhotoCarousel />
     </Container>
+
+const mainPage =
+    <Container>
+        <Header />
+        <div>Main page</div>
+    </Container>
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: mainPage
+    },
+    {
+        path: "/gallery",
+        element: gallery
+    }
+])
+
+export default function App() {
+  return (
+      <RouterProvider router={router} />
   );
 }
