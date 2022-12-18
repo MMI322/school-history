@@ -1,0 +1,23 @@
+html {
+    background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-end;
+    width: 1440px;
+    height: 750px;
+    margin: 10px auto;
+    font-size: 100px;
+    font-weight: bold;
+    background-image: url("../../../public/assets/main/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+.main-content-bullets {
+    margin: 20px;
+}
