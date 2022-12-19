@@ -10,7 +10,7 @@ html {
     margin: 10px auto;
     font-size: 100px;
     font-weight: bold;
-    background-image: url("../../../public/assets/main/main-background.png");
+    background-image: url("../public/assets/main/main-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
